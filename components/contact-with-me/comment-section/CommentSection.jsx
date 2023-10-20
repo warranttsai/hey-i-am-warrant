@@ -10,7 +10,7 @@ import {
 import { FlexColumnCenteredContainer } from "../../styled-component/Container";
 // components
 import CommentComponent from "../comment-component/CommentComponent";
-import WarningBalloon from "../../WarningBalloon";
+// import WarningBalloon from "../../WarningBalloon";
 
 export default function CommentSection() {
   const [inputUserName, setInputUserName] = useState("");
@@ -136,9 +136,9 @@ export default function CommentSection() {
         )}
       </FlexColumnCenteredContainer>
 
-      {onShowBallon && (
+      {/* {onShowBallon && (
         <WarningBalloon message={ballonMessage} colour={ballonColour} />
-      )}
+      )} */}
     </>
   );
 }

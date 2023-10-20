@@ -11,15 +11,15 @@ import {
   FlexRowCenteredContainer,
 } from "./styled-component/Container";
 import { BlackCenterTitle } from "./styled-component/Title";
-import WarningBalloon from "./WarningBalloon";
+// import WarningBalloon from "./WarningBalloon";
 
 export function Challenge1() {
-  const [content, setContent] = useState<string>("");
+  const [content, setContent] = useState < string > "";
 
-  const calculateWords = (value: string) => {
+  const calculateWords = (value) => {
     let strBuf = "";
     let counter = 0;
-    const lenValue: number = +value.length;
+    const lenValue = +value.length;
     for (const [index, item] of value) {
       console.log(index, item);
       strBuf += item;
@@ -33,7 +33,7 @@ export function Challenge1() {
     }
     return counter;
   };
-  const calculateLetters = (value: string) => {
+  const calculateLetters = (value) => {
     let strBuf = "";
     for (const item of value) {
       if (item.match(/[A-Za-z0-9]/g)) {
@@ -42,7 +42,7 @@ export function Challenge1() {
     }
     return strBuf;
   };
-  const calculateSentences = (value: string) => {
+  const calculateSentences = (value) => {
     const strArr = value.split(". ");
     return strArr.length;
   };
@@ -88,11 +88,12 @@ export function Challenge1() {
 }
 
 export function Challenge2() {
-  const [desiredCharacter, setDesiredCharacter] = useState<string>("");
-  const [newPassword, setNewPassword] = useState<string>("");
+  const [desiredCharacter, setDesiredCharacter] = useState < string > "";
+  const [newPassword, setNewPassword] = useState < string > "";
   // display states
-  const [showSuccessMessage, setShowSuccessMessage] = useState<boolean>(false);
-  const [showCopyMessage, setShowCopyMessage] = useState<boolean>(false);
+  const [showSuccessMessage, setShowSuccessMessage] =
+    useState < boolean > false;
+  const [showCopyMessage, setShowCopyMessage] = useState < boolean > false;
 
   const handleGeneratePassword = () => {
     /* password validation
@@ -104,7 +105,7 @@ export function Challenge2() {
     const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
     const specialCharacters = "!@#$%^&*()_+";
-    const getRandomElement = (array: string) => {
+    const getRandomElement = (array) => {
       return array[Math.floor(Math.random() * array.length)];
     };
     // Generate random uppercase letter
@@ -208,12 +209,12 @@ export function Challenge2() {
         </Flex1>
       </FlexColumnCenteredContainer>
       {/* Copy Message */}
-      {showCopyMessage && (
+      {/* {showCopyMessage && (
         <WarningBalloon
           message="Your password had been copied to your clipboard!"
           colour="green"
         />
-      )}
+      )} */}
     </FlexColumnCenteredContainer>
   );
 }

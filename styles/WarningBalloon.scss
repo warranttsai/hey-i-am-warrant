@@ -1,0 +1,36 @@
+.warning-balloon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  /* Set the background color of the balloon */
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  /* Set the text color */
+  font-weight: bold;
+  animation: floatUp 1s ease-in-out;
+  /* Set the duration and easing of the float animation */
+}
+
+.warning-text {
+  display: block;
+  text-align: center;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(-30%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-100%);
+  }
+}
