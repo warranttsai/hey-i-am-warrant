@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
-  padding-inline: 20vw;
-  width: auto;
-`;
-
 export const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
