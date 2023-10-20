@@ -2,32 +2,26 @@
 import React, { useState, useEffect } from "react";
 import { Button, TextareaAutosize } from "@mui/material";
 // utils
-import { fetchingComments, saveComment } from "../../utils/commentSectionUtils";
+import {
+  fetchingComments,
+  saveComment,
+} from "../../../utils/commentSectionUtils";
 // styled-components
-import { FlexColumnCenteredContainer } from "../../../components/styled-component/Container";
+import { FlexColumnCenteredContainer } from "../../styled-component/Container";
 // components
 import CommentComponent from "../comment-component/CommentComponent";
 import WarningBalloon from "../../WarningBalloon";
 
 export default function CommentSection() {
-  const [inputUserName, setInputUserName] = useState<string>("");
-  const [inputComment, setInputComment] = useState<string>("");
-  const [commentList, setCommentList] = useState<
-    Array<{
-      comment: string;
-      comment_date: string;
-      comment_time: string;
-      id: string;
-      user_name: string;
-    }>
-  >([]);
+  const [inputUserName, setInputUserName] = useState("");
+  const [inputComment, setInputComment] = useState("");
+  const [commentList, setCommentList] = useState([]);
   // loading
-  const [submitingNewComment, setSubmitingNewComment] =
-    useState<boolean>(false);
-  const [refreshComments, setRefreshComments] = useState<boolean>(false);
-  const [onShowBallon, setOnShowBallon] = useState<boolean>(false);
-  const [ballonMessage, setBallonMessage] = useState<string>("404 Not Found!");
-  const [ballonColour, setBacllonColour] = useState<string>("red");
+  const [submitingNewComment, setSubmitingNewComment] = useState(false);
+  const [refreshComments, setRefreshComments] = useState(false);
+  const [onShowBallon, setOnShowBallon] = useState(false);
+  const [ballonMessage, setBallonMessage] = useState("404 Not Found!");
+  const [ballonColour, setBacllonColour] = useState("red");
 
   const handleSubmitComment = () => {
     if (inputComment) {
@@ -40,7 +34,7 @@ export default function CommentSection() {
           setSubmitingNewComment(false);
           setRefreshComments(true);
         })
-        .catch((err: string) => {
+        .catch((err) => {
           console.log("Save comment error!", err);
           setSubmitingNewComment(false);
           setOnShowBallon(true);
@@ -61,7 +55,7 @@ export default function CommentSection() {
           setCommentList(res);
           setRefreshComments(false);
         })
-        .catch((err: string) => {
+        .catch((err) => {
           console.log("Fetching Comments Error!", err);
           setRefreshComments(false);
           setOnShowBallon(true);
@@ -76,7 +70,7 @@ export default function CommentSection() {
         setCommentList(res);
         setRefreshComments(false);
       })
-      .catch((err: string) => {
+      .catch((err) => {
         console.log("Fetching Comments Error!", err);
         setOnShowBallon(true);
         setBallonMessage(err.toString());
@@ -103,10 +97,10 @@ export default function CommentSection() {
             style={{ minHeight: 25, padding: 0 }}
             value={inputUserName}
             placeholder="What is your name?"
-            onKeyDown={(e: any) => {
+            onKeyDown={(e) => {
               if (e.key === "Enter") handleSubmitComment();
             }}
-            onChange={(e: any) => {
+            onChange={(e) => {
               setInputUserName(e.target.value);
             }}
           />
@@ -114,7 +108,7 @@ export default function CommentSection() {
             className="w-100"
             style={{ minHeight: 50, padding: 0 }}
             value={inputComment}
-            onChange={(e: any) => {
+            onChange={(e) => {
               setInputComment(e.target.value);
             }}
             placeholder="Anything you want to say..."
@@ -132,24 +126,13 @@ export default function CommentSection() {
           <span>Loading...</span>
         ) : (
           commentList &&
-          commentList.map(
-            (
-              comment: {
-                comment: string;
-                comment_date: string;
-                comment_time: string;
-                id: string;
-                user_name: string;
-              },
-              index: number
-            ) => {
-              return (
-                <React.Fragment key={comment.id}>
-                  <CommentComponent index={index} comment={comment} />
-                </React.Fragment>
-              );
-            }
-          )
+          commentList.map((comment) => {
+            return (
+              <React.Fragment key={comment.id}>
+                <CommentComponent index={index} comment={comment} />
+              </React.Fragment>
+            );
+          })
         )}
       </FlexColumnCenteredContainer>
 
