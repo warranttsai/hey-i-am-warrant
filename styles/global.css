@@ -1,20 +1,16 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -29,4 +25,54 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Common Used Styles */
+.w-100 {
+  width: 100% !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-1 {
+  flex: 1 1 !important;
+}
+.flex-2 {
+  flex: 1 1 !important;
+}
+.flex-3 {
+  flex: 1 1 !important;
+}
+.flex-4 {
+  flex: 1 1 !important;
+}
+.flex-5 {
+  flex: 1 1 !important;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-start {
+  justify-content: start;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.align-items.center {
+  align-items: center;
+}
+.align-items.start {
+  align-items: start;
+}
+.align-items.end {
+  align-items: end;
 }
