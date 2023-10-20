@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/WarningBalloon.scss";
 
-interface WarningBalloonProps {
-  message: string;
-  colour: string;
-}
-
-const WarningBalloon = ({ message, colour }: WarningBalloonProps) => {
+const WarningBalloon = ({ message, colour }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {

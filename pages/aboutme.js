@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 // images
 import Warrant from "../public/Warrant.jpg";
 // components
-// import ContactWithMe from "../components/contact-with-me/ContactWithMe";
+import ContactWithMe from "../components/contact-with-me/ContactWithMe";
 // styled comopnents
-// import {
-//   Flex1,
-//   Flex2,
-//   FlexRowCenteredContainer,
-// } from "../components/styled-component/Container";
-// import { BlackCenterTitle } from "../components/styled-component/Title";
-// import { RectangleBoxShadow } from "../components/styled-component/BoxShadow";
-// import { NormalContent } from "../components/styled-component/Content";
+import {
+  Flex1,
+  Flex2,
+  FlexRowCenteredContainer,
+} from "../components/styled-component/Container";
+import { BlackCenterTitle } from "../components/styled-component/Title";
+import { RectangleBoxShadow } from "../components/styled-component/BoxShadow";
+import { NormalContent } from "../components/styled-component/Content";
 
 function AboutMe() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -36,9 +36,7 @@ function AboutMe() {
       >
         {/* Introduction */}
         <section id="introduction">
-          <BlackCenterTitle data-testid="intro-title">
-            Introduction
-          </BlackCenterTitle>
+          <BlackCenterTitle>Introduction</BlackCenterTitle>
 
           <FlexRowCenteredContainer style={{ gap: 10 }}>
             <Flex1 className="w-100">
@@ -54,7 +52,6 @@ function AboutMe() {
               </RectangleBoxShadow>
             </Flex1>
             <Flex2
-              data-testid="introduction-content"
               className="w-100 h-100 d-flex justify-content-start align-items-start"
               style={{ minWidth: 400 }}
             >
