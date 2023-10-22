@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Box } from "@mui/material";
 // styled-components
 import { ArrowComponent } from "../components/ArrowComponent";
-import { BlackCenterTitle } from "../components/styled-component/Title";
+import { BlackTitle } from "../components/styled-component/Title";
 // components
 import SE2016 from "../components/learning-path-components/software-engineering/SE2016";
 import SE2017 from "../components/learning-path-components/software-engineering/SE2017";
@@ -24,9 +24,7 @@ export default function LearningPath() {
           transition={{ duration: 0.5 }}
         >
           <>
-            <BlackCenterTitle>
-              👨‍💻 Software Engineering/Computer Science
-            </BlackCenterTitle>
+            <BlackTitle>👨‍💻 Software Engineering/Computer Science</BlackTitle>
             <div
               className="hide-scroll-bar"
               style={{
@@ -62,9 +60,9 @@ export default function LearningPath() {
         data-testid="street-dancing"
         style={{ background: "#D3D3D3", minHeight: "40vh" }}
       >
-        <BlackCenterTitle style={{ marginTop: "100px", paddingTop: "30px" }}>
+        <BlackTitle style={{ marginTop: "100px", paddingTop: "30px" }}>
           🕺 Street Dancing
-        </BlackCenterTitle>
+        </BlackTitle>
       </div> */}
     </>
   );

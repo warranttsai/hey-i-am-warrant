@@ -10,10 +10,10 @@ export const BrownCenterTitle = styled.h1`
   text-align: center;
 `;
 
-export const BlackCenterTitle = styled.h1`
-  font-size: 3rem;
+export const BlackTitle = styled.span`
+  font-size: 2rem;
+  font-weight: 700;
   color: black;
-  text-align: center;
 `;
 export const WhiteCenterTitle = styled.h1`
   font-size: 2rem;

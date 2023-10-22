@@ -1,7 +1,7 @@
 // module
 import { motion } from "framer-motion";
 // styled-components
-import { BlackCenterTitle } from "../components/styled-component/Title";
+import { BlackTitle } from "../components/styled-component/Title";
 import {
   GreyBackgroundContainer,
   Flex1,
@@ -24,7 +24,7 @@ export default function WorkingExperience() {
           transition={{ duration: 0.5 }}
         >
           <div style={{ padding: "2vh 10vw" }}>
-            <BlackCenterTitle>Software Engineer Experience</BlackCenterTitle>
+            <BlackTitle>Software Engineer Experience</BlackTitle>
             <Cleanstormwater />
           </div>
         </motion.div>
@@ -36,9 +36,9 @@ export default function WorkingExperience() {
           transition={{ duration: 0.5 }}
         >
           <div style={{ padding: "2vh 10vw" }}>
-            <BlackCenterTitle style={{ color: "white" }}>
+            <BlackTitle style={{ color: "white" }}>
               The Other Experience
-            </BlackCenterTitle>
+            </BlackTitle>
             <FlexColumnCenteredContainer style={{ gap: "10px" }}>
               <Flex1 className="w-100">
                 <Fila />

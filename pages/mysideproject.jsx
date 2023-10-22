@@ -1,7 +1,7 @@
 // module
 import { motion } from "framer-motion";
 // styled-components
-import { BlackCenterTitle } from "../components/styled-component/Title";
+import { BlackTitle } from "../components/styled-component/Title";
 // components
 import { Divider } from "@mui/material";
 import CafeManagemengSystem from "../components/my-side-projects-components/CafeManagementSystem";
@@ -12,7 +12,7 @@ export default function MySideProjects() {
   return (
     <>
       <div style={{ padding: "2vh 10vw" }}>
-        <BlackCenterTitle>My Side Projects</BlackCenterTitle>
+        <BlackTitle>My Side Projects</BlackTitle>
       </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}

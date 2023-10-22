@@ -1,12 +1,10 @@
 // styled-component
-import { BlackCenterTitle } from "../styled-component/Title";
+import { BlackTitle } from "../styled-component/Title";
 
 export const ObjectOrientation = () => {
   return (
     <div>
-      <BlackCenterTitle>
-        Creating module for reuseable methods/components
-      </BlackCenterTitle>
+      <BlackTitle>Creating module for reuseable methods/components</BlackTitle>
       <div className="text-left">
         <span>
           There must have some methods and components which could be re-used in

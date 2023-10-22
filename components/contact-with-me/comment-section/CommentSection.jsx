@@ -126,7 +126,7 @@ export default function CommentSection() {
           <span>Loading...</span>
         ) : (
           commentList &&
-          commentList.map((comment) => {
+          commentList.map((comment, index) => {
             return (
               <React.Fragment key={comment.id}>
                 <CommentComponent index={index} comment={comment} />

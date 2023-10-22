@@ -1,5 +1,7 @@
+// modules
+import React from "react";
 // styled-component
-import { BlackCenterTitle } from "./styled-component/Title";
+import { BlackTitle } from "./styled-component/Title";
 import {
   FlexColumnCenteredContainer,
   Flex1,
@@ -12,9 +14,9 @@ export default function AboutThisWebApp() {
       id="about-this-web-app-container"
       style={{ gap: 5, paddingInline: "10vw" }}
     >
-      <BlackCenterTitle id="about-this-web-app-title">
+      <BlackTitle id="about-this-web-app-title">
         Technology Utilization
-      </BlackCenterTitle>
+      </BlackTitle>
       {/* Github Link */}
       <Flex1 className="text-left">
         <a href="https://github.com/WarrantTsai/warrant-entry" target="_blank">

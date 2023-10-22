@@ -1,3 +1,6 @@
+// modules
+import React from "react";
+import Image from "next/image";
 // images
 import ProfilePicPlaceholder from "../../../public/profile-pic-placeholder.jpg";
 // styled-components
@@ -7,20 +10,7 @@ import {
   SpeechBubbleRight,
 } from "../../styled-component/SpeechBubble";
 
-interface CommentComponentProps {
-  index: number;
-  comment: {
-    comment: string;
-    comment_date: string;
-    comment_time: string;
-    id: string;
-    user_name: string;
-  };
-}
-export default function CommentComponent({
-  index,
-  comment,
-}: CommentComponentProps) {
+export default function CommentComponent({ index, comment }) {
   return (
     <>
       <FlexRowCenteredContainer
@@ -28,7 +18,14 @@ export default function CommentComponent({
       >
         {index % 2 === 0 ? (
           <>
-            <img className="flex-1 w-100" src={ProfilePicPlaceholder} />
+            <Image
+              src={ProfilePicPlaceholder}
+              className="flex-1 w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Picture of the commentor"
+            />
             <SpeechBubbleLeft className="flex-2 text-left w-100">
               <span
                 className="flex-1 w-100"
@@ -80,7 +77,14 @@ export default function CommentComponent({
                 {comment.comment !== "" ? comment.comment : "<no comment>"}
               </span>
             </SpeechBubbleRight>
-            <img className="flex-1 w-100" src={ProfilePicPlaceholder} />
+            <Image
+              src={ProfilePicPlaceholder}
+              className="flex-1 w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Picture of the commentor"
+            />
           </>
         )}
       </FlexRowCenteredContainer>

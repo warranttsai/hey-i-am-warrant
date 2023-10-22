@@ -1,5 +1,5 @@
 // styled-component
-import { BlackCenterTitle } from "../styled-component/Title";
+import { BlackTitle } from "../styled-component/Title";
 // images
 import img1 from "../../public/howToEnableCors/1.jpeg";
 import img2 from "../../public/howToEnableCors/2.jpeg";
@@ -10,7 +10,7 @@ import img5 from "../../public/addingCorsHeaderToYourApiResponseHeader/3.jpeg";
 export const HowToEnableCORS = () => {
   return (
     <>
-      <BlackCenterTitle>How To Enable CORS</BlackCenterTitle>
+      <BlackTitle>How To Enable CORS</BlackTitle>
       <div className="text-left">
         <ol>
           <li>Log in to your AWS console.</li>
@@ -31,9 +31,9 @@ export const HowToEnableCORS = () => {
 export const AddingCorsHeaderToYourApiResponseHeader = () => {
   return (
     <>
-      <BlackCenterTitle style={{ fontSize: "2rem" }}>
+      <BlackTitle style={{ fontSize: "2rem" }}>
         Adding CORS Header To Your API Response Header
-      </BlackCenterTitle>
+      </BlackTitle>
       <div className="text-left">
         <ol>
           <li>
@@ -57,9 +57,9 @@ export const AddingCorsHeaderToYourApiResponseHeader = () => {
 export const EnableSES = () => {
   return (
     <>
-      <BlackCenterTitle>
+      <BlackTitle>
         How to Enable Simple Email Service With Email Address
-      </BlackCenterTitle>
+      </BlackTitle>
       <div className="text-left">
         <ol>
           <li>Access to your SES</li>

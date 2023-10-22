@@ -10,7 +10,7 @@ import {
   FlexColumnCenteredContainer,
   FlexRowCenteredContainer,
 } from "./styled-component/Container";
-import { BlackCenterTitle } from "./styled-component/Title";
+import { BlackTitle } from "./styled-component/Title";
 // import WarningBalloon from "./WarningBalloon";
 
 export function Challenge1() {
@@ -49,7 +49,7 @@ export function Challenge1() {
 
   return (
     <FlexColumnCenteredContainer style={{ paddingInline: 100 }}>
-      <BlackCenterTitle>Challenge #1: Text Analyzer Tool</BlackCenterTitle>
+      <BlackTitle>Challenge #1: Text Analyzer Tool</BlackTitle>
       {/* Introduction */}
       <span id="challenge1-introduction">
         It is an easy challenge in which you have to build logic for a text
@@ -137,9 +137,7 @@ export function Challenge2() {
 
   return (
     <FlexColumnCenteredContainer style={{ paddingInline: 100 }}>
-      <BlackCenterTitle>
-        Challenge #2: React Password Generator
-      </BlackCenterTitle>
+      <BlackTitle>Challenge #2: React Password Generator</BlackTitle>
       <FlexColumnCenteredContainer style={{ gap: 10 }}>
         {/* Introduction */}
         <Flex1>
@@ -222,7 +220,7 @@ export function Challenge2() {
 export function Challenge3() {
   return (
     <FlexColumnCenteredContainer style={{ paddingInline: 100 }}>
-      <BlackCenterTitle>Challenge #3: Random Quote Generator</BlackCenterTitle>
+      <BlackTitle>Challenge #3: Random Quote Generator</BlackTitle>
       <span>
         Challenge yourself to build a random quote generator using ReactJS and
         showcase your front-end development skills. Flourish your creativity
@@ -237,9 +235,7 @@ export function Challenge3() {
 export function Challenge4() {
   return (
     <FlexColumnCenteredContainer style={{ paddingInline: 100 }}>
-      <BlackCenterTitle>
-        Challenge #4: CRUD Typescript Tasklist App
-      </BlackCenterTitle>
+      <BlackTitle>Challenge #4: CRUD Typescript Tasklist App</BlackTitle>
       <span>
         This React Typescript Tasklist/Todo challenge requires you to perform
         CRUD operations with instructions to write clean, reusable, manageable,

@@ -1,5 +1,6 @@
 // styled-component
-import { ContactContainer } from "../../components/styled-component/Container";
+import React from "react";
+import { ContactContainer } from "../styled-component/Container";
 // components
 import CommentSection from "./comment-section/CommentSection";
 import ContactSection from "./contact-section/ContactSection";

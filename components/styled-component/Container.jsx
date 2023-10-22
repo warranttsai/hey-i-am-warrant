@@ -28,6 +28,8 @@ export const FlexRowCenteredContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 `;
 export const FlexColumnCenteredContainer = styled.div`
   display: flex;

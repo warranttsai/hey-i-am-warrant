@@ -7,7 +7,7 @@ import SteamPage from "../public/MyHobbies/steam-page.jpeg";
 import NarakaRank from "../public/MyHobbies/naraka-rank.jpg";
 // styled components
 import {
-  BlackCenterTitle,
+  BlackTitle,
   WhiteCenterTitle,
 } from "../components/styled-component/Title";
 import { GreyBackgroundContainer } from "../components/styled-component/Container";
@@ -21,7 +21,7 @@ export default function MyHobbies() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <BlackCenterTitle>I AM A DANCER!</BlackCenterTitle>
+          <BlackTitle>I AM A DANCER!</BlackTitle>
           <div className="text-left" style={{ paddingInline: "10vw" }}>
             <span>
               I had been dancing in Popping dance since September 2016. In June

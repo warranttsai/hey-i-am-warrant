@@ -1,18 +1,19 @@
 // modules
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // images
 import Warrant from "../public/Warrant.jpg";
 // components
 import Layout from "../components/layout";
-// import ContactWithMe from "../components/contact-with-me/ContactWithMe";
+import ContactWithMe from "../components/contact-with-me/ContactWithMe";
 // styled comopnents
 import {
   Flex1,
   Flex2,
   FlexRowCenteredContainer,
 } from "../components/styled-component/Container";
-import { BlackCenterTitle } from "../components/styled-component/Title";
+import { BlackTitle } from "../components/styled-component/Title";
 import { RectangleBoxShadow } from "../components/styled-component/BoxShadow";
 import { NormalContent } from "../components/styled-component/Content";
 
@@ -36,11 +37,13 @@ export default function AboutMe() {
         transition={{ duration: 0.5 }}
       >
         {/* Introduction */}
-        <section id="introduction">
-          <BlackCenterTitle>Introduction</BlackCenterTitle>
+        <section id="introduction" style={{ marginBottom: 50 }}>
+          <div className="d-flex justify-content-center align-items-center">
+            <BlackTitle>Introduction</BlackTitle>
+          </div>
 
           <FlexRowCenteredContainer style={{ gap: 10 }}>
-            <Flex1 className="w-100">
+            <Flex1 className="w-100" style={{ minWidth: 300 }}>
               <RectangleBoxShadow
                 id="warrant-image-container"
                 className="w-100"
@@ -48,14 +51,18 @@ export default function AboutMe() {
                 {!imageLoaded ? (
                   <span className="w-100">Loading...</span>
                 ) : (
-                  <img className="w-100" src={Warrant} />
+                  <Image
+                    src={Warrant}
+                    className="w-100 h-100"
+                    width={500}
+                    height={500}
+                    layout="responsive"
+                    alt="Picture of the author"
+                  />
                 )}
               </RectangleBoxShadow>
             </Flex1>
-            <Flex2
-              className="w-100 h-100 d-flex justify-content-start align-items-start"
-              style={{ minWidth: 400 }}
-            >
+            <Flex2 className="w-100 h-100 d-flex justify-content-start align-items-start">
               <NormalContent className="w-100 h-100">
                 Warrant is a results-driven web developer with one and a half
                 years of proficiency in{" "}
@@ -80,7 +87,9 @@ export default function AboutMe() {
           </FlexRowCenteredContainer>
         </section>
         {/* Contact With Me */}
-        <section>{/* <ContactWithMe /> */}</section>
+        <section>
+          <ContactWithMe />
+        </section>
       </motion.div>
     </Layout>
   );

@@ -1,4 +1,4 @@
-/* This is the initiallize component. The global css could be used in this component */
+/* This is the initialising  component. The global css could be used in this component */
 import "../styles/Home.module.css";
 import "../styles/global.css";
 

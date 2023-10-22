@@ -2,8 +2,9 @@
 import { Button, FormControl, FormLabel } from "@mui/material";
 import {} from "@mui/material";
 // styled-components
-import { BlackCenterTitle } from "../../../components/styled-component/Title";
+import { BlackTitle } from "../../styled-component/Title";
 import { FlexRowCenteredContainer } from "../../styled-component/Container";
+import React from "react";
 
 export default function ContactSection() {
   return (
@@ -12,7 +13,7 @@ export default function ContactSection() {
       style={{ paddingInline: "10vw" }}
     >
       <FormControl fullWidth>
-        <BlackCenterTitle>Contact With Me</BlackCenterTitle>
+        <BlackTitle>Contact With Me</BlackTitle>
         {/* Social Media Buttons */}
         <FlexRowCenteredContainer
           style={{
