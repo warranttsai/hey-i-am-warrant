@@ -51,6 +51,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "aboutme")}
           >
@@ -65,6 +66,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "learningpath")}
           >
@@ -80,6 +82,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "mysideprojects")}
           >
@@ -95,6 +98,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "mycodingbible")}
           >
@@ -109,6 +113,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "lab")}
           >
@@ -124,6 +129,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "myhobbies")}
           >
@@ -138,6 +144,7 @@ export default function App() {
                 bgcolor: "#D7F72A",
                 color: "black",
               },
+              maxWidth: 300,
             }}
             onClick={(e) => handleClick(e, "workingexperience")}
           >
