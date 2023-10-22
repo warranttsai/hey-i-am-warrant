@@ -6,6 +6,7 @@ import { Button } from "@mui/material";
 import "../styles/global.css";
 // styled component
 import { VerticalButtons } from "../components/styled-component/Button";
+import { BrownCenterTitle } from "../components/styled-component/Title";
 
 export default function App() {
   const router = useRouter();
@@ -27,21 +28,11 @@ export default function App() {
           minHeight: "100vh",
         }}
       >
-        <h1
-          id="home-title"
-          style={{
-            color: "#b48608",
-            fontFamily: `"Droid serif", serif`,
-            fontSize: "2rem",
-            fontWeight: 400,
-            fontStyle: "italic",
-            textAlign: "center",
-          }}
-        >
+        <BrownCenterTitle id="home-title">
           Warrant TSAI <br />
           Web Developer / Street Dancer
-        </h1>
-        <VerticalButtons className="d-flex flex-column justify-content-center align-items-center">
+        </BrownCenterTitle>
+        <VerticalButtons>
           <Button
             variant="contained"
             id="about-me-app-button"
