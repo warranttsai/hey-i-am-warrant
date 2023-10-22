@@ -20,8 +20,8 @@ export default function CommentSection() {
   const [submitingNewComment, setSubmitingNewComment] = useState(false);
   const [refreshComments, setRefreshComments] = useState(false);
   const [onShowBallon, setOnShowBallon] = useState(false);
-  const [ballonMessage, setBallonMessage] = useState("404 Not Found!");
-  const [ballonColour, setBacllonColour] = useState("red");
+  // const [ballonMessage, setBallonMessage] = useState("404 Not Found!");
+  // const [ballonColour, setBacllonColour] = useState("red");
 
   const handleSubmitComment = () => {
     if (inputComment) {

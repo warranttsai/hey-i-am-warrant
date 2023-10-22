@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 // images
 import Warrant from "../public/Warrant.jpg";
 // components
-import ContactWithMe from "../components/contact-with-me/ContactWithMe";
+import Layout from "./layout";
+// import ContactWithMe from "../components/contact-with-me/ContactWithMe";
 // styled comopnents
 import {
   Flex1,
@@ -28,7 +29,7 @@ function AboutMe() {
   }, []);
 
   return (
-    <div style={{ marginBlock: 10, paddingInline: "10vw" }}>
+    <Layout>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -81,7 +82,7 @@ function AboutMe() {
         {/* Contact With Me */}
         <section>{/* <ContactWithMe /> */}</section>
       </motion.div>
-    </div>
+    </Layout>
   );
 }
 
