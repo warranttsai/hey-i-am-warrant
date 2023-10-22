@@ -1,44 +1,41 @@
 // modules
 import React from "react";
 import { Toolbar, AppBar, Button, Box } from "@mui/material";
+import Link from "next/link";
 // import { useNavigate } from "react-router-dom";
 
 function Header() {
   // const navigate = useNavigate();
 
   return (
-    <AppBar position="static" style={{ width: "100%" }}>
-      <Toolbar sx={{ justifyContent: "flex-end" }}>
-        <Button
-          color="inherit"
-          // onClick={() => navigate("/")}
-          sx={{ marginRight: "auto", fontSize: "25px", padding: "0" }}
-        >
+    <AppBar position="static">
+      <Toolbar className="w-100">
+        <Link color="inherit" href="/" sx={{ fontSize: "25px", padding: "0" }}>
           🏡
-        </Button>
-        {/* <Box>
-          <Button color="inherit" onClick={() => navigate("aboutme")}>
+        </Link>
+        <Box sx={{ marginLeft: "auto" }}>
+          <Link color="inherit" href="/aboutme">
             ABOUT ME
-          </Button>
-          <Button color="inherit" onClick={() => navigate("learningpath")}>
+          </Link>
+          <Link color="inherit" href="/learningpath">
             LEARNING PATH
-          </Button>{" "}
-          <Button color="inherit" onClick={() => navigate("mysideprojects")}>
-            My SIDE PROJECTS
-          </Button>
-          <Button color="inherit" onClick={() => navigate("/mycodingbible")}>
-            Coding Bible
-          </Button>
-          <Button color="inherit" onClick={() => navigate("lab")}>
-            Laboratory
-          </Button>
-          <Button color="inherit" onClick={() => navigate("myhobbies")}>
-            MY HOBBIES
-          </Button>
-          <Button color="inherit" onClick={() => navigate("workingexperience")}>
+          </Link>
+          <Link color="inherit" href="/mysideprojects">
+            SIDE PROJECTS
+          </Link>
+          <Link color="inherit" href="/mycodingbible">
+            CODING BIBLE
+          </Link>
+          <Link color="inherit" href="/lab">
+            LABORATORY
+          </Link>
+          <Link color="inherit" href="/myhobbies">
+            HOBBIES
+          </Link>
+          <Link color="inherit" href="/workingexperience">
             WORKING EXPERIENCE
-          </Button>
-        </Box> */}
+          </Link>
+        </Box>
       </Toolbar>
     </AppBar>
   );
