@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 // images
 import Warrant from "../public/Warrant.jpg";
 // components
-import Layout from "./layout";
+import Layout from "../components/layout";
 // import ContactWithMe from "../components/contact-with-me/ContactWithMe";
 // styled comopnents
 import {
@@ -16,7 +16,7 @@ import { BlackCenterTitle } from "../components/styled-component/Title";
 import { RectangleBoxShadow } from "../components/styled-component/BoxShadow";
 import { NormalContent } from "../components/styled-component/Content";
 
-function AboutMe() {
+export default function AboutMe() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
@@ -85,5 +85,3 @@ function AboutMe() {
     </Layout>
   );
 }
-
-export default AboutMe;

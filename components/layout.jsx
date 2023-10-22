@@ -1,8 +1,8 @@
 // components
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 // styled-components
-import { HeaderContainer } from "../components/styled-component/Container";
+import { HeaderContainer } from "./styled-component/Container";
 
 // style={{ marginBlock: 10, paddingInline: "10vw" }}
 export default function Layout({ children }) {
