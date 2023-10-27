@@ -47,16 +47,16 @@ img {
   flex: 1 1 !important;
 }
 .flex-2 {
-  flex: 1 1 !important;
+  flex: 2 1 !important;
 }
 .flex-3 {
-  flex: 1 1 !important;
+  flex: 3 1 !important;
 }
 .flex-4 {
-  flex: 1 1 !important;
+  flex: 4 1 !important;
 }
 .flex-5 {
-  flex: 1 1 !important;
+  flex: 5 1 !important;
 }
 .justify-content-center {
   justify-content: center;
