@@ -1,3 +1,8 @@
+/* 
+* This is the home page of the website. 
+With <header>, <footer>, <main>, it combined index.html into this .jsx
+*/
+
 // modules
 import Head from "next/head";
 import { useRouter } from "next/router";

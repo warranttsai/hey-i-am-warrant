@@ -11,7 +11,9 @@ export default function Footer() {
         paddingBlock: 20,
       }}
     >
-      <span>Thank you for visiting! Hope you have a nice day!</span>
+      <span style={{ marginInline: "auto" }}>
+        Thank you for visiting! Hope you have a nice day!
+      </span>
     </footer>
   );
 }
