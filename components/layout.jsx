@@ -7,7 +7,7 @@ import { HeaderContainer } from "./styled-component/Container";
 // style={{ marginBlock: 10, paddingInline: "10vw" }}
 export default function Layout({ children }) {
   return (
-    <div style={{ minHeight: "90vh" }}>
+    <div style={{ minHeight: "100vh", minWidth: 300 }}>
       <HeaderContainer id="header-container">
         <Header />
       </HeaderContainer>

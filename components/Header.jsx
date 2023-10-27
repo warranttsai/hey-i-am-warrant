@@ -2,41 +2,75 @@
 import React from "react";
 import { Toolbar, AppBar, Button, Box } from "@mui/material";
 import Link from "next/link";
+import { FlexRowCenteredContainer } from "./styled-component/Container";
 // import { useNavigate } from "react-router-dom";
 
 function Header() {
   // const navigate = useNavigate();
 
   return (
-    <AppBar position="static">
-      <Toolbar className="w-100">
-        <Link color="inherit" href="/" sx={{ fontSize: "25px", padding: "0" }}>
+    <AppBar id="header-app-bar" position="static" sx={{ flexDirection: "row" }}>
+      <FlexRowCenteredContainer
+        style={{
+          justifyContent: "space-between",
+          padding: "8px 20px",
+          flexWrap: "wrap",
+        }}
+      >
+        <Link
+          id="header-logo"
+          color="inherit"
+          href="/"
+          sx={{ fontSize: "2rem", padding: "0" }}
+        >
           🏡
         </Link>
-        <Box sx={{ marginLeft: "auto" }}>
-          <Link color="inherit" href="/aboutme">
-            ABOUT ME
-          </Link>
-          <Link color="inherit" href="/learningpath">
-            LEARNING PATH
-          </Link>
-          <Link color="inherit" href="/mysideprojects">
-            SIDE PROJECTS
-          </Link>
-          <Link color="inherit" href="/mycodingbible">
-            CODING BIBLE
-          </Link>
-          <Link color="inherit" href="/lab">
-            LABORATORY
-          </Link>
-          <Link color="inherit" href="/myhobbies">
-            HOBBIES
-          </Link>
-          <Link color="inherit" href="/workingexperience">
-            WORKING EXPERIENCE
-          </Link>
+        <Box
+          id="header-box"
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+            flexWrap: "wrap",
+            gap: 1,
+          }}
+        >
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/aboutme">
+              ABOUT ME
+            </Link>
+          </Button>
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/learningpath">
+              LEARNING PATH
+            </Link>
+          </Button>
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/mysideprojects">
+              SIDE PROJECTS
+            </Link>
+          </Button>
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/mycodingbible">
+              CODING BIBLE
+            </Link>
+          </Button>
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/lab">
+              LABORATORY
+            </Link>
+          </Button>
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/myhobbies">
+              HOBBIES
+            </Link>
+          </Button>
+          <Button variant="contained" size="small">
+            <Link color="inherit" href="/workingexperience">
+              WORKING EXPERIENCE
+            </Link>
+          </Button>
         </Box>
-      </Toolbar>
+      </FlexRowCenteredContainer>
     </AppBar>
   );
 }
