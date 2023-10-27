@@ -10,7 +10,7 @@ import {
 import { FlexColumnCenteredContainer } from "../../styled-component/Container";
 // components
 import CommentComponent from "../comment-component/CommentComponent";
-// import WarningBalloon from "../../WarningBalloon";
+import WarningBalloon from "../../warning-ballon/WarningBalloon";
 
 export default function CommentSection() {
   const [inputUserName, setInputUserName] = useState("");
@@ -20,8 +20,8 @@ export default function CommentSection() {
   const [submitingNewComment, setSubmitingNewComment] = useState(false);
   const [refreshComments, setRefreshComments] = useState(false);
   const [onShowBallon, setOnShowBallon] = useState(false);
-  // const [ballonMessage, setBallonMessage] = useState("404 Not Found!");
-  // const [ballonColour, setBacllonColour] = useState("red");
+  const [ballonMessage, setBallonMessage] = useState("404 Not Found!");
+  const [ballonColour, setBacllonColour] = useState("red");
 
   const handleSubmitComment = () => {
     if (inputComment) {
@@ -80,6 +80,9 @@ export default function CommentSection() {
 
   // show boaalon debounce
   useEffect(() => {
+    console.log({
+      ballonMessage: ballonMessage,
+    });
     if (onShowBallon) {
       // After 3 seconds, hide the message again
       setTimeout(() => {
@@ -91,7 +94,10 @@ export default function CommentSection() {
   return (
     <>
       <FlexColumnCenteredContainer>
-        <div style={{ width: "50%" }}>
+        <div
+          className="d-flex flex-column justify-content-center"
+          style={{ width: "50%", gap: 5 }}
+        >
           <TextareaAutosize
             className="w-100"
             style={{ minHeight: 25, padding: 0 }}
@@ -136,9 +142,9 @@ export default function CommentSection() {
         )}
       </FlexColumnCenteredContainer>
 
-      {/* {onShowBallon && (
+      {onShowBallon && (
         <WarningBalloon message={ballonMessage} colour={ballonColour} />
-      )} */}
+      )}
     </>
   );
 }

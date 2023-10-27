@@ -1,16 +1,19 @@
 import { useState, useEffect } from "react";
-import "../styles/WarningBalloon.scss";
+import style from "./WarningBalloon.module.scss";
 
 const WarningBalloon = ({ message, colour }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(false);
-    }, 3000); // Set the duration for the balloon to be visible (in milliseconds)
+    if (isVisible) {
+      const timer = setTimeout(() => {
+        setIsVisible(false);
+      }, 3000); // Set the duration for the balloon to be visible (in milliseconds)
 
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    }
   }, []);
+
   useEffect(() => {
     // Reset visibility after 4 seconds to show the balloon again
     if (!isVisible) {
@@ -23,8 +26,8 @@ const WarningBalloon = ({ message, colour }) => {
   }, [isVisible]);
 
   return isVisible ? (
-    <div className="warning-balloon" style={{ background: colour }}>
-      <span className="warning-text">{message}</span>
+    <div className={style["warning-balloon"]} style={{ background: colour }}>
+      <span className={style["warning-text"]}>{message}</span>
     </div>
   ) : null;
 };
