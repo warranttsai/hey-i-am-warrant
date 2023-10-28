@@ -4,11 +4,11 @@ This repository is Warrant TSAI's website! You can learn this person from his ma
 
 # warrant-entry
 
-This project is created for Warrant to introduce his life. Please feel free to havea look.
+This project is created for Warrant to introduce his life. Please feel free to have a look.
 
-Update on <b>1 October 2023</b>
-Program Language: TypeScript
-Framework: React
+Update on <b>28 October 2023</b>
+Program Language: Javascript
+Framework: Next.JS
 
 ## How To Install This Project
 
@@ -28,19 +28,17 @@ Framework: React
 
 ## How To Execute This Project?
 
-- yarn dev/npm run dev: "sls offline"
-  This command is used to enable the api on local side.
-- yarn deploy/npm run deploy: "sls deploy"
-  The deploy command will deploy the project to AWS Lambda. You have to be authorized to use this command.
-- yarn deployFunction <fileName>: "sls deploy function -f"
-  You can specify the file which you wished to deploy instead of the whole project. It helps to deploy the new functions in a efficient manner.
+- npm run build: "next build",
+- npm run dev: "next dev",
+- npm run start: "next start"
 
 ## To-do List
 
 - Migrate images to S3 bucket to optimise the efficiency.
-- In the coding bible, create article component to contain my notes in a good-looking way
+- Getting interface design from web designer.
 - Update my understanding of SSR, CSR and SSG to my coding bible.
 - Using NextJS for static pages to increase the SEO.
+- Migrate MyCodingBible to another project
 
 ## Contributors:
 
