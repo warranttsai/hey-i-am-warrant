@@ -9,4 +9,5 @@ export const SimpleGallery = styled.div`
   gap: 10px;
   padding: 10px 5px;
   background: rgba(3, 102, 214, 0.3);
+  overflow-y: hidden;
 `;

@@ -35,6 +35,7 @@ export default function LearningPath() {
                 overflowX: "scroll",
                 paddingInline: 200,
                 maxWidth: "100%",
+                overflowY: "hidden",
               }}
             >
               <SE2016 />
