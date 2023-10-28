@@ -80,9 +80,6 @@ export default function CommentSection() {
 
   // show boaalon debounce
   useEffect(() => {
-    console.log({
-      ballonMessage: ballonMessage,
-    });
     if (onShowBallon) {
       // After 3 seconds, hide the message again
       setTimeout(() => {

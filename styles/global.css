@@ -67,12 +67,12 @@ img {
 .justify-content-end {
   justify-content: end;
 }
-.align-items.center {
+.align-items-center {
   align-items: center;
 }
-.align-items.start {
+.align-items-start {
   align-items: start;
 }
-.align-items.end {
+.align-items-end {
   align-items: end;
 }

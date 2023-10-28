@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 // images
 import Warrant from "../public/Warrant.jpg";
+// css
+import style from "../styles/aboutme.module.scss";
 // components
 import Layout from "../components/layout";
 import ContactWithMe from "../components/contact-with-me/ContactWithMe";
@@ -15,7 +17,6 @@ import {
 } from "../components/styled-component/Container";
 import { BlackTitle } from "../components/styled-component/Title";
 import { RectangleBoxShadow } from "../components/styled-component/BoxShadow";
-import { NormalContent } from "../components/styled-component/Content";
 
 export default function AboutMe() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -38,11 +39,9 @@ export default function AboutMe() {
       >
         {/* Introduction */}
         <section id="introduction" style={{ marginBottom: 50 }}>
-          <div className="d-flex justify-content-center align-items-center">
-            <BlackTitle>Introduction</BlackTitle>
-          </div>
-
-          <FlexRowCenteredContainer style={{ gap: 10 }}>
+          <FlexRowCenteredContainer
+            style={{ gap: 10, minWidth: 300, alignItems: "start" }}
+          >
             <Flex1 className="w-100" style={{ minWidth: 300 }}>
               <RectangleBoxShadow
                 id="warrant-image-container"
@@ -62,8 +61,13 @@ export default function AboutMe() {
                 )}
               </RectangleBoxShadow>
             </Flex1>
-            <Flex2 className="w-100 h-100 d-flex justify-content-start align-items-start">
-              <NormalContent className="w-100 h-100">
+            <Flex2 style={{ padding: "10px 50px" }}>
+              <div className="d-flex justify-content-center align-items-center">
+                <BlackTitle>Summary</BlackTitle>
+              </div>
+              <br />
+              <br />
+              <span className={`w-100 h-100 ${style["summary"]}`}>
                 Warrant is a results-driven web developer with one and a half
                 years of proficiency in{" "}
                 <span style={{ color: "red" }}>React JS/TS</span> development.
@@ -71,8 +75,9 @@ export default function AboutMe() {
                 <span style={{ color: "red" }}>
                   master's degree in Information Technology (2022)
                 </span>
-                , demonstrating a commitment to continuous learning. Proven
-                expertise in backend development utilizing{" "}
+                , demonstrating a commitment to continuous learning. <br />
+                <br />
+                Proven expertise in backend development utilizing{" "}
                 <span style={{ color: "blue" }}>
                   Lambda serverless framework, Node.JS, Sails.JS, and Python
                   Flask
@@ -82,7 +87,7 @@ export default function AboutMe() {
                 prowess, and a willingness to tackle new challenges head-on. An
                 open-minded individual receptive to diverse perspectives and
                 suggestions.
-              </NormalContent>
+              </span>
             </Flex2>
           </FlexRowCenteredContainer>
         </section>
