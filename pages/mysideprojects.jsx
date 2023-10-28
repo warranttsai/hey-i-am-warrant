@@ -1,16 +1,17 @@
 // module
 import { motion } from "framer-motion";
+import { Divider } from "@mui/material";
 // styled-components
 import { BlackTitle } from "../components/styled-component/Title";
 // components
-import { Divider } from "@mui/material";
+import Layout from "../components/layout";
 import CafeManagemengSystem from "../components/my-side-projects-components/CafeManagementSystem";
 import TotoEvHome from "../components/my-side-projects-components/TotoEvHome";
 import StudioMcmxcvii97 from "../components/my-side-projects-components/StudioMcmxcVii97";
 
 export default function MySideProjects() {
   return (
-    <>
+    <Layout>
       <div style={{ padding: "2vh 10vw" }}>
         <BlackTitle>My Side Projects</BlackTitle>
       </div>
@@ -51,6 +52,6 @@ export default function MySideProjects() {
       >
         <StudioMcmxcvii97 />
       </motion.div>
-    </>
+    </Layout>
   );
 }

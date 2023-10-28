@@ -1,4 +1,5 @@
 // modules
+import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
 // images
 import dashboard from "../../public/studioMcmxcvii97/dashboard.jpg";
@@ -40,8 +41,22 @@ export default function StudioMcmxcvii97() {
         </Flex1>
         <Flex1 id="carousel" style={{ minWidth: 250 }}>
           <Carousel>
-            <img src={dashboard} />
-            <img src={priceConsultant} />
+            <Image
+              src={dashboard}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={priceConsultant}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
           </Carousel>
         </Flex1>
       </FlexRowCenteredContainer>

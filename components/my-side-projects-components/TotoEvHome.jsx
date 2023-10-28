@@ -1,4 +1,6 @@
 // modules
+import React from "react";
+import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
 // images
 import dashboard from "../../public/totoEvHome/dashboard.jpg";
@@ -32,9 +34,30 @@ export default function TotoEvHome() {
         </Flex1>
         <Flex1 id="carousel" style={{ minWidth: 250 }}>
           <Carousel>
-            <img src={dashboard} />
-            <img src={tutorial} />
-            <img src={help} />
+            <Image
+              src={dashboard}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={tutorial}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={help}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
           </Carousel>
         </Flex1>
       </FlexRowCenteredContainer>

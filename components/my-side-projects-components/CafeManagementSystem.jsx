@@ -1,4 +1,6 @@
 // modules
+import React from "react";
+import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
 // images
 import dashboard from "../../public/cafeManagementSystem/1.jpg";
@@ -33,8 +35,22 @@ export default function CafeManagemengSystem() {
         </Flex1>
         <Flex1 id="carousel" style={{ minWidth: 250 }}>
           <Carousel>
-            <img src={dashboard} />
-            <img src={userList} />
+            <Image
+              src={dashboard}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={userList}
+              className="w-100 h-100"
+              width={500}
+              height={500}
+              layout="responsive"
+              alt="Loading..."
+            />
           </Carousel>
         </Flex1>
       </FlexRowCenteredContainer>
