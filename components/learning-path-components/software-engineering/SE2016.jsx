@@ -1,4 +1,5 @@
 // modules
+import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -48,7 +49,14 @@ export default function SE2016() {
               Jian Ming Xuan
             </a>
           </Typography>
-          <img style={{ width: 200 }} src={NationalFormosaUniversity} />
+          <Image
+            src={NationalFormosaUniversity}
+            className="w-100 h-100"
+            width={200}
+            height={200}
+            layout="responsive"
+            alt="Picture of the author"
+          />
         </CardContent>
       </Card>
     </>

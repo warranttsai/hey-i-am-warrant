@@ -37,7 +37,10 @@ export default function SE2018() {
             <span style={{ color: "red" }}>machine learning</span> and implement
             some small project with{" "}
             <span style={{ color: "red" }}>Python Tensorflow</span> from{" "}
-            <a href="https://www.google.com/search?q=python+tensorflow+mofan&oq=python+tensorflow+mofan&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDQyNjdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">
+            <a
+              href="https://www.google.com/search?q=python+tensorflow+mofan&oq=python+tensorflow+mofan&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDQyNjdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+              style={{ color: "blue", borderBottom: "1px solid blue" }}
+            >
               莫煩Python
             </a>
           </Typography>

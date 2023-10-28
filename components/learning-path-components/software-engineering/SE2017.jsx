@@ -1,4 +1,5 @@
 // modules
+import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -46,11 +47,46 @@ export default function SE2017() {
             assessment. It was very similar to the concept of LeetCode.
           </Typography>
           <SimpleGallery>
-            <img style={{ width: 200, height: 200 }} src={SE2017_1} />
-            <img style={{ width: 200, height: 200 }} src={SE2017_2} />
-            <img style={{ width: 200, height: 200 }} src={SE2017_3} />
-            <img style={{ width: 200, height: 200 }} src={SE2017_4} />
-            <img style={{ width: 200, height: 200 }} src={SE2017_5} />
+            <Image
+              src={SE2017_1}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading"
+            />
+            <Image
+              src={SE2017_2}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading"
+            />
+            <Image
+              src={SE2017_3}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading"
+            />
+            <Image
+              src={SE2017_4}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading"
+            />
+            <Image
+              src={SE2017_5}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading"
+            />
           </SimpleGallery>
         </CardContent>
       </Card>

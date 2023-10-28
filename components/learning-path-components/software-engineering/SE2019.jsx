@@ -1,4 +1,5 @@
 // modules
+import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -37,7 +38,14 @@ export default function SE2019() {
             unexpected situation. I decided to operate the drone to circle the
             map until the center of the map.
           </Typography>
-          <img style={{ width: 250 }} src={AlgorithmMock} />
+          <Image
+            src={AlgorithmMock}
+            className="w-100 h-100"
+            width={250}
+            height={250}
+            layout="responsive"
+            alt="Loading..."
+          />
         </CardContent>
       </Card>
     </>

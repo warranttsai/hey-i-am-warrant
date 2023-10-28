@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import { ArrowComponent } from "../components/ArrowComponent";
 import { BlackTitle } from "../components/styled-component/Title";
 // components
+import Layout from "../components/layout";
 import SE2016 from "../components/learning-path-components/software-engineering/SE2016";
 import SE2017 from "../components/learning-path-components/software-engineering/SE2017";
 import SE2018 from "../components/learning-path-components/software-engineering/SE2018";
@@ -16,7 +17,7 @@ import SE2023 from "../components/learning-path-components/software-engineering/
 
 export default function LearningPath() {
   return (
-    <>
+    <Layout>
       <Box data-testid="software-engineering" style={{ minHeight: "40vh" }}>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -64,6 +65,6 @@ export default function LearningPath() {
           🕺 Street Dancing
         </BlackTitle>
       </div> */}
-    </>
+    </Layout>
   );
 }

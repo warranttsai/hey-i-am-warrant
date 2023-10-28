@@ -1,4 +1,5 @@
 // modules
+import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -41,10 +42,38 @@ export default function SE2020() {
             updated and learning.
           </Typography>
           <SimpleGallery>
-            <img style={{ width: 200 }} src={GraduatePic} />
-            <img style={{ width: 200 }} src={IELTs} />
-            <img style={{ width: 200 }} src={BachelorCertificate} />
-            <img style={{ width: 200 }} src={BachelorTranscript} />
+            <Image
+              src={GraduatePic}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={IELTs}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={BachelorCertificate}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading..."
+            />
+            <Image
+              src={BachelorTranscript}
+              className="w-100 h-100"
+              width={200}
+              height={200}
+              layout="responsive"
+              alt="Loading..."
+            />
           </SimpleGallery>
         </CardContent>
       </Card>

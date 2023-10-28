@@ -55,11 +55,22 @@ export default function SE2022() {
             were used in our company.
           </Typography>
           <SimpleGallery>
-            <img
-              style={{ width: 200, height: 150 }}
+            <Image
               src={CleanStormwaterLogo}
+              className="w-100 h-100"
+              width={200}
+              height={150}
+              layout="responsive"
+              alt="Loading..."
             />
-            <img style={{ width: 200, height: 150 }} src={MasterCertificate} />
+            <Image
+              src={MasterCertificate}
+              className="w-100 h-100"
+              width={200}
+              height={150}
+              layout="responsive"
+              alt="Loading..."
+            />
           </SimpleGallery>
         </CardContent>
       </Card>
