@@ -28,6 +28,15 @@ img {
 }
 
 /* Common Used Styles */
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
 .w-100 {
   width: 100% !important;
 }
@@ -75,4 +84,14 @@ img {
 }
 .align-items-end {
   align-items: end;
+}
+/* button hover */
+.button-hover-blue:hover {
+  background: blue;
+}
+.button-hover-yellow-border {
+  border: 1px transparent solid;
+}
+.button-hover-yellow-border:hover {
+  border: 1px yellow solid;
 }
