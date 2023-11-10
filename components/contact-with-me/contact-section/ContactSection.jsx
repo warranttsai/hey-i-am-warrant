@@ -23,8 +23,8 @@ export default function ContactSection() {
         >
           <Button
             id="linkedin-facebook-button"
-            className="flex-1 button-hover-blue"
-            style={{ background: "grey", fontSize: "0.75rem", width: "auto" }}
+            className="flex-1 button-hover-yellow-border"
+            style={{ fontSize: "0.75rem", width: "auto" }}
             size="small"
             variant="contained"
             data-testid="linedin-button"
@@ -39,11 +39,11 @@ export default function ContactSection() {
           </Button>
           <Button
             id="instagram-facebook-button"
-            className="flex-1 button-hover-blue"
-            style={{ background: "grey", fontSize: "0.75rem", width: "auto" }}
+            className="flex-1 button-hover-yellow-border"
+            style={{ fontSize: "0.75rem", width: "auto" }}
             size="small"
             variant="contained"
-            color="success"
+            color="error"
             data-testid="instagram-button"
             onClick={() =>
               window.open(
@@ -56,9 +56,9 @@ export default function ContactSection() {
           </Button>
           <Button
             id="footer-facebook-button"
-            className="flex-1 button-hover-blue"
-            style={{ background: "grey", fontSize: "0.75rem", width: "auto" }}
-            size="small"
+            className="flex-1 button-hover-yellow-border"
+            style={{ fontSize: "0.75rem", width: "auto" }}
+            size="danger"
             variant="contained"
             color="success"
             data-testid="facebook-button"

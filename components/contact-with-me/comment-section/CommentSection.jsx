@@ -93,7 +93,7 @@ export default function CommentSection() {
       <FlexColumnCenteredContainer>
         <div
           className="d-flex flex-column justify-content-center"
-          style={{ width: "50%", gap: 5 }}
+          style={{ width: "30%", gap: 5 }}
         >
           <TextareaAutosize
             className="w-100"
