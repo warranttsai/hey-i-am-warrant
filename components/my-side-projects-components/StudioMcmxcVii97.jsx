@@ -14,7 +14,10 @@ import {
 export default function StudioMcmxcvii97() {
   return (
     <>
-      <FlexRowCenteredContainer id="studio-mcmxcvii-97-container">
+      <FlexRowCenteredContainer
+        id="studio-mcmxcvii-97-container"
+        style={{ padding: "50px 30px" }}
+      >
         <Flex1 id="description" style={{ minWidth: 250 }}>
           <FlexColumnCenteredContainer>
             <Flex1>

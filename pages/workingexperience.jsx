@@ -1,9 +1,9 @@
 // module
 import { motion } from "framer-motion";
+import { Divider } from "@mui/material";
 // styled-components
 import { BlackTitle } from "../components/styled-component/Title";
 import {
-  GreyBackgroundContainer,
   Flex1,
   FlexColumnCenteredContainer,
 } from "../components/styled-component/Container";
@@ -13,10 +13,11 @@ import Fila from "../components/working-experience-component/Fila";
 import Funkdelics from "../components/working-experience-component/Funkdelics";
 import Blackball from "../components/working-experience-component/Blackball";
 import PoppingDanceInstructor from "../components/working-experience-component/PoppingDanceInstructor";
+import Layout from "../components/layout";
 
 export default function WorkingExperience() {
   return (
-    <>
+    <Layout>
       <div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -29,16 +30,21 @@ export default function WorkingExperience() {
           </div>
         </motion.div>
       </div>
-      <GreyBackgroundContainer>
+      <Divider
+        style={{
+          width: "90%",
+          marginInline: "auto",
+          marginBlock: 10,
+        }}
+      />
+      <div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
           <div style={{ padding: "2vh 10vw" }}>
-            <BlackTitle style={{ color: "white" }}>
-              The Other Experience
-            </BlackTitle>
+            <BlackTitle>The Other Experience</BlackTitle>
             <FlexColumnCenteredContainer style={{ gap: "10px" }}>
               <Flex1 className="w-100">
                 <Fila />
@@ -55,7 +61,7 @@ export default function WorkingExperience() {
             </FlexColumnCenteredContainer>
           </div>
         </motion.div>
-      </GreyBackgroundContainer>
-    </>
+      </div>
+    </Layout>
   );
 }

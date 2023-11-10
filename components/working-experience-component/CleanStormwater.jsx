@@ -1,6 +1,8 @@
 // modules
-import Card from "@mui/material/Card";
+import { Card } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
+import Image from "next/image";
+import Carousel from "react-material-ui-carousel";
 // images
 import CleanStormwaterGroup1 from "../../public/present-work/cleanstormwater-group-1.jpeg";
 import CleanStormwaterGroup2 from "../../public/present-work/cleanstormwater-group-2.jpeg";
@@ -75,31 +77,33 @@ export default function Cleanstormwater() {
             <li>Refactoring: encapsulation and optimise the script</li>
             <li>Project progress presenting, reporting and monitoring.</li>
           </ul>
-          <Flex1
-            style={{
-              margin: "0 auto 0.67rem auto",
-              display: "flex",
-              gap: "10px",
-              maxWidth: "700px",
-              overflow: "scroll",
-            }}
-          >
-            <img
-              style={{ width: "200px", height: "130px" }}
-              src={CleanStormwaterGroup1}
-            />
-            <img
-              style={{ width: "200px", height: "130px" }}
-              src={CleanStormwaterGroup2}
-            />
-            <img
-              style={{ width: "200px", height: "130px" }}
-              src={CleanStormwaterGroup3}
-            />
-            <img
-              style={{ width: "200px", height: "130px" }}
-              src={CleanStormwaterGroup4}
-            />
+          <Flex1>
+            <Carousel>
+              <Image
+                src={CleanStormwaterGroup1}
+                className="w-100"
+                width={"auto"}
+                height={"auto"}
+              />
+              <Image
+                src={CleanStormwaterGroup2}
+                className="h-100"
+                width={"auto"}
+                height={"auto"}
+              />
+              <Image
+                src={CleanStormwaterGroup3}
+                className="h-100"
+                width={"auto"}
+                height={"auto"}
+              />
+              <Image
+                src={CleanStormwaterGroup4}
+                className="h-100"
+                width={"auto"}
+                height={"auto"}
+              />
+            </Carousel>
           </Flex1>
         </CardContent>
       </Card>

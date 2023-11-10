@@ -44,14 +44,6 @@ export const Flex2 = styled.div`
   flex: 2;
 `;
 
-export const GreyBackgroundContainer = styled.div`
-  color: white;
-  background: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const LabSection = styled.div`
   display: flex;
   flex-direction: column;

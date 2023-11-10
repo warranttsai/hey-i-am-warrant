@@ -12,9 +12,6 @@ import StudioMcmxcvii97 from "../components/my-side-projects-components/StudioMc
 export default function MySideProjects() {
   return (
     <Layout>
-      <div style={{ padding: "2vh 10vw" }}>
-        <BlackTitle>My Side Projects</BlackTitle>
-      </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

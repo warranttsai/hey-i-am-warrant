@@ -16,7 +16,10 @@ import {
 export default function TotoEvHome() {
   return (
     <>
-      <FlexRowCenteredContainer id="totoev-home-container">
+      <FlexRowCenteredContainer
+        id="totoev-home-container"
+        style={{ padding: "50px 30px" }}
+      >
         <Flex1 id="description" style={{ minWidth: 250 }}>
           <FlexColumnCenteredContainer>
             <Flex1>

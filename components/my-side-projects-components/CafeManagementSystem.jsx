@@ -15,7 +15,10 @@ import {
 export default function CafeManagemengSystem() {
   return (
     <>
-      <FlexRowCenteredContainer id="cafe-management-system-container">
+      <FlexRowCenteredContainer
+        id="cafe-management-system-container"
+        style={{ padding: "50px 30px" }}
+      >
         <Flex1 id="description" style={{ minWidth: 250 }}>
           <FlexColumnCenteredContainer>
             <Flex1>

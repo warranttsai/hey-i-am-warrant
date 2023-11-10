@@ -1,5 +1,5 @@
 // modules
-import Card from "@mui/material/Card";
+import { Card } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 // styled-components
 import { BrownCenterTitle } from "../styled-component/Title";
