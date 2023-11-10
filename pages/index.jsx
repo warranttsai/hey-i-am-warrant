@@ -95,36 +95,6 @@ export default function App() {
           </Button>
           <Button
             variant="contained"
-            color="success"
-            id="coding-bible-app-button"
-            className="w-100"
-            sx={{
-              ":hover": {
-                bgcolor: "#D7F72A",
-                color: "black",
-              },
-            }}
-            onClick={(e) => handleClick(e, "mycodingbible")}
-          >
-            Coding Bible
-          </Button>
-          <Button
-            variant="contained"
-            id="laboratory-app-button"
-            className="w-100"
-            sx={{
-              ":hover": {
-                bgcolor: "#D7F72A",
-                color: "black",
-              },
-            }}
-            onClick={(e) => handleClick(e, "lab")}
-          >
-            Laboratory
-          </Button>
-
-          <Button
-            variant="contained"
             id="my-hobbies-app-button"
             className="w-100"
             sx={{
