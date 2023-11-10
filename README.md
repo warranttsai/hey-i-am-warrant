@@ -34,11 +34,10 @@ Framework: Next.JS
 
 ## To-do List
 
-- Migrate images to S3 bucket to optimise the efficiency.
-- Getting interface design from web designer.
-- Update my understanding of SSR, CSR and SSG to my coding bible.
-- Using NextJS for static pages to increase the SEO.
-- Migrate MyCodingBible to another project
+1. Migrate images to S3 bucket to optimise the efficiency.
+2. Using static page rendering to increase the SEO.
+3. Getting interface design from web designer.
+4. Update documents from linked in to this page.
 
 ## Contributors:
 

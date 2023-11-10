@@ -13,7 +13,7 @@ function Header() {
       <FlexRowCenteredContainer
         style={{
           justifyContent: "space-between",
-          padding: "8px 20px",
+          padding: "15px 20px",
           flexWrap: "wrap",
         }}
       >
@@ -34,37 +34,52 @@ function Header() {
             gap: 1,
           }}
         >
-          <Button variant="contained" size="small">
+          <Button
+            variant="contained"
+            size="small"
+            className="button-hover-yellow-border"
+            style={{ backgroundColor: "#a53d38" }}
+          >
             <Link color="inherit" href="/aboutme">
               ABOUT ME
             </Link>
           </Button>
-          <Button variant="contained" size="small">
+          <Button
+            variant="contained"
+            size="small"
+            className="button-hover-yellow-border"
+            style={{ backgroundColor: "#a53d38" }}
+          >
             <Link color="inherit" href="/learningpath">
               LEARNING PATH
             </Link>
           </Button>
-          <Button variant="contained" size="small">
+          <Button
+            variant="contained"
+            size="small"
+            className="button-hover-yellow-border"
+            style={{ backgroundColor: "#a53d38" }}
+          >
             <Link color="inherit" href="/mysideprojects">
               SIDE PROJECTS
             </Link>
           </Button>
-          <Button variant="contained" size="small">
-            <Link color="inherit" href="/mycodingbible">
-              CODING BIBLE
-            </Link>
-          </Button>
-          <Button variant="contained" size="small">
-            <Link color="inherit" href="/lab">
-              LABORATORY
-            </Link>
-          </Button>
-          <Button variant="contained" size="small">
+          <Button
+            variant="contained"
+            size="small"
+            className="button-hover-yellow-border"
+            style={{ backgroundColor: "#a53d38" }}
+          >
             <Link color="inherit" href="/myhobbies">
               HOBBIES
             </Link>
           </Button>
-          <Button variant="contained" size="small">
+          <Button
+            variant="contained"
+            size="small"
+            className="button-hover-yellow-border"
+            style={{ backgroundColor: "#a53d38" }}
+          >
             <Link color="inherit" href="/workingexperience">
               WORKING EXPERIENCE
             </Link>
